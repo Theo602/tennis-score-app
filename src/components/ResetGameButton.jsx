@@ -1,0 +1,12 @@
+import { useDispatch } from "react-redux";
+import { resetScore } from "../store";
+ 
+
+export function ResetGameButton(){
+    
+    const dispatch = useDispatch();
+
+    return <button className="button" onClick={() => {
+        dispatch(resetScore())
+    }}> Remettre à zéro </button>
+}
