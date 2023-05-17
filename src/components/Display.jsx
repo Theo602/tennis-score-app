@@ -22,7 +22,9 @@ export function Display() {
                         <>
                             {
                                 gameAdvantage ?
-                                <p className="display" >{gameAdvantage === "player1" ? "avantage joueur 1" : "avantage joueur 2"}</p> 
+                                <p className="display" >
+                                    Le score est: {pointScorePlayer1} - {pointScorePlayer2} <br/>
+                                    {gameAdvantage === "player1" ? "avantage joueur 1" : "avantage joueur 2"}</p> 
                                 :
                                 <p className="display" >Le score est: {pointScorePlayer1} - {pointScorePlayer2}</p> 
                             }
