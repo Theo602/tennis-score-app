@@ -85,11 +85,13 @@ function reducer(state, action) {
                     } else {
                         // si l'autre joueur n'a pas l'advantage, le joueur le gagne
                         draft.advantage = player;
+
                     }
                 } else {
                     // si le joueur est à 40, il gagne
                     draft.winner = player;
                     draft.gameHistory.push({ player1: draft.player1, player2: draft.player2, winner: player });
+
                 }
             });
         }
@@ -101,10 +103,11 @@ function reducer(state, action) {
 }
 
 // on crée le store avec le state et le reducer
-
-export const store = createStore(reducer, initialState);
+const reduxDevtools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+export const store = createStore(reducer, initialState, reduxDevtools);
 
 store.subscribe(() => {
     console.log("Nouveau state:");
     console.log(store.getState());
+
 });
