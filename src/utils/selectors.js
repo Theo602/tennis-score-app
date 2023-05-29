@@ -13,6 +13,7 @@ export const selectPlayerGame = (playerId) => {
     return (state) => state.gameHistory.filter(joueur => joueur.winner === playerId).length;
 }
 
+// Fonction qui calcul le nombre d'échange entre les joueurs
 export const selectPlayerExchange = (playerId) => {
 
     const otherPlayerId = (playerId === "player1") ? "player2" : "player1";
@@ -71,3 +72,6 @@ export const selectDisplayGame = (state) => {
         return text;
     }
 }
+
+// Fonction qui récupere le status du jours en mode automatique
+export const selectGameIsPlaying = (state) => state.playingAuto;

@@ -1,4 +1,5 @@
 import { Display } from './components/Display';
+import { PlayAutoButton } from './components/PlayAutoButton';
 import { PlayPauseButton } from './components/PlayPauseButton';
 import { PlayerExchange } from './components/PlayerExchange';
 import { PlayerPoint } from './components/PlayerPoints';
@@ -27,6 +28,9 @@ function App() {
         <div className="buttons-row">
           <ResetGameButton />
           <PlayPauseButton />
+        </div>
+        <div className="buttons-row">
+          <PlayAutoButton />
         </div>
       </div>
 

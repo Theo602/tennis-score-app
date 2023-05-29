@@ -54,8 +54,12 @@ p {
   cursor: pointer;
 }
 
+.button-full {
+  width: 100%;
+}
+
 .button:hover {
-  background: #2c2f44;
+  background: hwb(233 59% 28%);
 }
 
 .button:active {
