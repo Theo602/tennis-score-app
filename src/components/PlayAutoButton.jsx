@@ -1,6 +1,7 @@
 import { useSelector, useStore } from "react-redux"
 import { selectGameIsPlaying } from "../utils/selectors";
-import { autoplay } from "../store";
+import { autoplay } from "../utils/actions";
+
 
 
 export function PlayAutoButton(){

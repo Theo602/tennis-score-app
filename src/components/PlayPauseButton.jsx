@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
-import { playPause } from "../store";
+import { playPause } from "../utils/actions";
+
 
 export function PlayPauseButton(){
     

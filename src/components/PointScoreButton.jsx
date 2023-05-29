@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { pointScored } from "../store";
+import { pointScored } from "../utils/actions";
 
 export function PointScoreButton({ playerId, PlayerName }){
     

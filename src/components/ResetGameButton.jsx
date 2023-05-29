@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
-import { resetScore } from "../store";
+import { resetScore } from "../utils/actions";
+
  
 
 export function ResetGameButton(){
